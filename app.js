@@ -23,10 +23,11 @@ function btnHandler(){
 console.log("differnce is"+ diff)
 
 var outputText= "you are " + diff + " days far fromm being lucky";
-alert("you are " + diff + " days far fromm being lucky")
-output.innerHTML = outputText;
 
-
+showOutput(outputText);
+}
+function showOutput(outputText){
+    output.innerHTML = outputText;
 }
 
 
