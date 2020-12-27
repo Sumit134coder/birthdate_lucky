@@ -1,7 +1,7 @@
 var userInput = document.querySelector("#input")
 var btn = document.querySelector("#submit")
 var luckyNumber = document.querySelector("#luckyNumber")
-var output = document.querySelector(".output")
+var output = document.querySelector("#output")
 
 var total= 0;
 var Sum=0;
@@ -21,8 +21,10 @@ function btnHandler(){
     else
     diff=luckyNumber.value-Sum;
 console.log("differnce is"+ diff)
+
+var outputText= "you are " + diff + " days far fromm being lucky";
 alert("you are " + diff + " days far fromm being lucky")
-output.innerText = "you are  days far from being lucky";
+output.innerHTML = outputText;
 
 
 }
