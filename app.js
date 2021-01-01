@@ -20,9 +20,9 @@ function btnHandler(){
         output.innerHTML = "you are lucky";
 
     }
-    else
+    else{
     image.src = "https://giphy.com/embed/qBVEww0YjwWyI";
-    output.innerHTML = "unlucky";
+    output.innerHTML = "unlucky";}
 }
 
 
