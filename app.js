@@ -3,32 +3,24 @@ var btn = document.querySelector("#submit")
 var luckyNumber = document.querySelector("#luckyNumber")
 var output = document.querySelector("#output")
 
-var total= 0;
 var Sum=0;
 function btnHandler(){
+    alert("as a website, your data will not be stored");
     console.log("clicked")
     var input = userInput.value;
     for(var i=0;i<input.length;i++){
         if(input[i]!='-')
         Sum += parseInt(input[i]);
     }
-    console.log(Sum);
-
-    if(Sum>=luckyNumber.value)
+    console.log(Sum%luckyNumber.value);
+    if(Sum%luckyNumber.value==0||luckyNumber.value%Sum==0)
     {
-    var diff = Sum-luckyNumber.value;
+        output.innerHTML = "you are lucky";
     }
     else
-    diff=luckyNumber.value-Sum;
-console.log("differnce is"+ diff)
-
-var outputText= "you are " + diff + " days far fromm being lucky";
-
-showOutput(outputText);
+    output.innerHTML = "unlucky";
 }
-function showOutput(outputText){
-    output.innerHTML = outputText;
-}
+
 
 
 btn.addEventListener("click",btnHandler);
