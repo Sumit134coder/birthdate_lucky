@@ -13,6 +13,18 @@
     background-color: sandybrown;
     border-radius: 10px;
 }
+footer{
+    text-align: center;
+    font-size: larger;
+    background-color: sandybrown;
+    color: slateblue;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+footer a{
+    text-decoration: none;
+    color:red;
+}
 .card{
     width: 350px;
     height: 400px;
