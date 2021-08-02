@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lucky birthday</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
-    <div class="main center">
-        <div class="card">
-            <h1>Lucky date calculator</h1>
-            <label for="date">enter the date:</label>
-            <input type="date" name="date" id="input"><br>
-            <label for="luckyNumber">your lucky number:</label>
-            <input  id="luckyNumber" type="text" placeholder="enter your lucky number"><br>
-            <button id="submit">Submit</button><br>
-            <h3>your output will come here</h3><br>
-            <div id="output"></div>
-            <iframe  width="200" height="200" class="giphy-embed" frameborder="0" allowfullscreen></iframe>
-
-        </div>
+    <h1>Is your birthday lucky?🙌🙌</h1>
+    <div class="container">
+        <label for="date-of-birth">date of birth
+            <input type="date" id="date-of-birth">
+        </label>
+        <label for="luckyNumber">your lucky number
+            <input type="number" id="luckyNumber">
+        </label>
+        <button>Check Result</button>
     </div>
-    <footer>thanks for trying this web app <br> made with ❤️❤️ by <a href="https://sumitmehra-portifolio.netlify.app/">SUMIT MEHRA</a></footer>
+    <div class="output">
+        <h3 class="output-body"></h3>
+        <iframe src="https://giphy.com/embed/5C2aHYut0kzXrf1Z7D" width="300" height="300" frameBorder="0" class="giphy-embed"></iframe>
+    </div>
+    <footer>
+        <a href="https://github.com/Sumit134coder"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sumit-mehra-6579171b4/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/SumitMe08819801"><i class="fab fa-twitter-square"></i></a>
 
-<script src="app.js"></script> 
-    
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>

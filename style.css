@@ -1,55 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+.output iframe{
+    visibility: hidden;
+    border-radius: 30px;
+}
+
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main{
-    width: 100%;
+
+body{
+    text-align: center;
+    background-color: #03071e;
+    color: whitesmoke;
     height: 100vh;
-    background-color: sandybrown;
+}
+
+.output{
+    height: 400px;
+}
+label{
+    display: block;
+    padding:2rem 0;
+}
+input{
+    border-radius: 3px;
+    background: transparent;
+    border: 2px solid white;
+    padding: 2px;
+    color: white;
+}
+
+button{
     border-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    background: transparent;
+    border: 2px dotted white;
+}
+
+button:hover{
+    color: #03071e;
+    background: white;
+    transition: 0.2s ease-in-out;
+}
+
+.output{
+    padding-top: 10px;
 }
 footer{
-    text-align: center;
-    font-size: larger;
-    background-color: sandybrown;
-    color: slateblue;
-    font-weight: 600;
-    margin-bottom: auto;
+    background: #060e3a;
+    display: flex;
+    justify-content: space-evenly;
+    height: 6rem;
+    border-radius: 20px;
 }
-footer a{
-    text-decoration: none;
-    color:red;
-}
-.card{
-    width: 350px;
-    height: 400px;
-    background: white;
-    cursor: pointer;
-    position: relative;
-    flex-direction: column;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 8px 0px 50px rgba(0,0, 0, 2);
+
+.fab{
+    color: #cfd2e4;
+    font-size: 5rem;
     padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Redressed', cursive;
-}
-
-.card:hover{
-    transition: all 0.3s;
-    transform:  translate(-50px)  translateY(0);
-}
-.card h1{
-    top: 200px;
-    text-shadow: sandybrown;
-}
-
-#output{
-    font-size: larger;
 }
